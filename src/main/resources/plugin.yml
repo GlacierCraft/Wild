@@ -1,0 +1,9 @@
+name: Wild
+version: '1.0.0'
+main: com.github.maheevil.wild.Wild
+api-version: 1.19
+authors: [ Maheesha ]
+description: TPs you to the wild
+commands:
+  wild:
+    description: Teleports to a random location.
