@@ -67,7 +67,7 @@ tasks.register('preRunServer'){
 }
 
 task runServer(type: JavaExec){
-    //dependsOn tasks.preRunServer
+    dependsOn tasks.getByName('preRunServer')
     def runDir = "${projectDir.path}/run"
     classpath = files(runDir + '/paper-1.19-81.jar')
     workingDir = file(runDir)
